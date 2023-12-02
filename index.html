@@ -4,101 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
-
-    <title>Proyecto Sharon</title>
+    <title>Heladeria</title>
 </head>
 <body>
     <div id="contenedor">
-        <div class="row">
-            <nav class="navbar navbar-dark bg-primary">
-                <div class="container">
-                  <a class="navbar-brand" href="#">
-                    <img src="imagenes/navbar.png" width="100" height="100" <h3>Heladeria "La Casona 3"</h3> 
-                    
-                  </a>
-                </div>
-              </nav>
-            <div class="col-lg-6">
+      <nav class="navbar navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+           <br> <h3>Heladeria Casona.</h3>
+          </a>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <br>
+        <div id="pantalla_1" class="pantalla_1">
+            <div class="row">
+              <div class="col-lg-6">
                 <br>
-              <div id="pantalla1" class="pantalla1">
-                  <button id="click" onclick="tinitas.()">
-                  <img id="pantalla1" src="imagenes/Helado-Tinita-150cm3.png" width="60" height="70" <h6 >Tinitas.</h6> 
-                </button>
-             </div>
-             <br>
-             
-              <button id="click" onclick="Fresa()">
-                <img src="imagenes/barquilla.png" width="60" height="70" <h6>Barquilla</h6>
                 
+                <img src="imagenes/Helado-Tinita-150cm3.png" width="65" height="100">
+              <button id="Napolitano" onclick="pedido1()"><h1 >Tinitas.</h1></button>
+                <br>
+                <br>
                 
-               
-             </button> 
-             
-
-            </div>
-            <div class="col-lg-6">
+                <img id="imagen" src="imagenes/barquilla.png" width="65" height="100">
+              <button id="Fresa." onclick="pedido2()"><h1>Barquilla.</h1></button>
                 <br>
-             <button id="click" onclick="pasas()">
-                <img src="imagenes/galleta.png" width="60" height="60" <h6>Galleta</h6> 
+              </div>
+              <div class="col-lg-6">
                 <br>
-             </button>
-             <br>
-             <br>
-             <button id="click" onclick="Chocolate()">
-                <img src="imagenes/chocolate.png" width="60" height="60"  <h6>Chocolate</h6> 
-             </button>
-
-
+              
+                <img src="imagenes/galleta.png" width="65" height="100" >
+              <button id="Ron con Pasas" onclick="pedido3()"><h1>Galletas.</h1></button>
+                <br>
+                <br>
+                
+                <img src="imagenes/polo-chocolate-vegano-stick-art.png" width="65" height="100" id="Chocolate" onclick="pedido4()">
+              <button  id="Chocolate" onclick="pedido4()"><h1>Chocolate.</h1></button>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              </div>
             </div>
         </div>
-        <br>
-           <div id="pantalla2" class="pantalla2_o">
-             <h1>Tinitas.</h1>
-             <img src="imagenes/Helado-Tinita-150cm3.png" width="120" height="120" >
-             <h3>precio:2$</h3>
-             <h3>cantidad</h3>  <input type="text">
-            </div>  
-            <br>
-                 <div id="pantalla2" class="pantalla2_o">
-              <h1>Barquilla</h1>
-              <img src="imagenes/barquilla.png" width="120" height="120" >
-              <h3>precio:3$</h3>
-              <h3>cantidad</h3>  <input type="text">
-                  </div>
-                  <br>
-                    <div id="pantalla2" class="pantalla2_o">
-                     <h1>Galleta</h1>
-                     <img src="imagenes/galleta.png" width="120" height="120" >
-                      <h3>precio:2$</h3>
-                    <h3>cantidad</h3>  <input type="text">
-                     </div>
-                     <br>
-                    <div id="pantalla2" class="pantalla2_o">
-                     <h1>Chocolate</h1>
-                      <img src="imagenes/polo-chocolate-vegano-stick-art.png" width="120" height="150" >
-                      <h3>precio:1$</h3>
-                     <h3>cantidad</h3>  <input type="text">
-                     <br><br>
-                    </div>
-                    <script>
-                        
-                    </script>
-                    
-                    <footer class="navbar navbar-dark bg-primary aling-content-end">
-                      
-                      <div class="container">
-                        
-                        <a class="navbar-brand" href="#">
-                          <h3>total:0$</h3>
-                            <button>ordenar</button>
-                        </a>
-                              
-                      </div>
-                    </footer> 
-                    <br>
-            
-        
-
+        <div id="pantalla_2" class="pantalla_o">
+          <div class="row">
+            <div class="col-lg-12">
+              <br>
+              <br>
+              <h1 id="helado">helado</h1>
+              <h1 id="precio">precio</h1>
+              <input type="number"  name="cantidad" id="numero">
+              <br>
+              <br>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button" onclick="listo()" id="listo">Listo</button>
+              </div>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+        <footer class="">
+            <div class="row">
+              <div class="col-lg-8">
+                <h1>Total:</h1>
+              </div>
+              <div class="col-lg-1">
+                <h1 id="resultado">0</h1>
+              </div>
+              <div class="col-lg-1">
+                <h1>BS</h1>
+              </div>
+              <div class="col-lg-2">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button class="btn btn-light me-md-2" onclick="orden()" type="button">Ordenar</button>
+                </div>
+              </div>
+            </div>
+        </footer>
     </div>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+<script>
+  function pedido1(){
+    document.getElementById("pantalla_1").classList.add("pantalla_o")
+    document.getElementById("pantalla_1").classList.remove("pantalla_1")
+    document.getElementById("pantalla_2").classList.add("pantalla_2")
+    document.getElementById("helado").innerHTML="Helado:Tinitas."
+    document.getElementById("precio").innerHTML="Precio:20bs"
+    if(pedido1=pedido1){
+      h=20
+    }
+  }
+  function pedido2(){
+    document.getElementById("pantalla_1").classList.add("pantalla_o")
+    document.getElementById("pantalla_1").classList.remove("pantalla_1")
+    document.getElementById("pantalla_2").classList.add("pantalla_2")
+    document.getElementById("helado").innerHTML="Helado:Barquilla."
+    document.getElementById("precio").innerHTML="Precio:35bs"
+    if(pedido2=pedido2){
+      h=35
+    }
+  }
+  function pedido3(){
+    document.getElementById("pantalla_1").classList.add("pantalla_o")
+    document.getElementById("pantalla_1").classList.remove("pantalla_1")
+    document.getElementById("pantalla_2").classList.add("pantalla_2")
+    document.getElementById("helado").innerHTML="Helado:Galleta."
+    document.getElementById("precio").innerHTML="Precio:50bs"
+    if(pedido3=pedido3){
+      h=50
+    }
+  }
+  function pedido4(){
+    document.getElementById("pantalla_1").classList.add("pantalla_o")
+    document.getElementById("pantalla_1").classList.remove("pantalla_1")
+    document.getElementById("pantalla_2").classList.add("pantalla_2")
+    document.getElementById("helado").innerHTML="Helado:Chocolate"
+    document.getElementById("precio").innerHTML="Precio:40bs"
+    if(pedido4=pedido4){
+      h=40
+    }
+  }
+  t=0;
+  function listo(){
+    document.getElementById("pantalla_2").classList.remove("pantalla_2")
+    document.getElementById("pantalla_1").classList.add("pantalla_1")
+    n1=document.getElementById("numero").value;
+    r=Number(n1)*Number(h)
+    t=Number(t)+Number(r)
+    document.getElementById("resultado").innerHTML=t;
+  }
+  function orden(){
+    document.getElementById("pantalla_2").classList.remove("pantalla_2")
+    document.getElementById("pantalla_1").classList.add("pantalla_1")
+    t=0;
+    document.getElementById("resultado").innerHTML=t;
+    alert("Gracias por su pedido...")
+  }
+</script>
+</html>

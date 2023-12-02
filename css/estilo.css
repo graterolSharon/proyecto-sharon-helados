@@ -1,50 +1,47 @@
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(129, 2, 108);
-    color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(90, 86, 94);
+    
+}
+#contenedor{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    background-color: rgb(232, 235, 235);
+    text-align: center;
+    color: black;
+    padding-block: auto;
+}
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    height: auto;
+    margin: auto;
+    
+    padding-top: 6px;
+    text-align: right;
 }
 .pantalla_o{
     display: none;
 }
-.pantalla2{
+.pantalla_2{
     display: block;
 }
-.pantalla1_o{
-    display: none;
-}
-.pantalla1{
+.pantalla_1{
     display: block;
-}
-#contenedor{
-    width: auto;
-    height: auto;
-    background-color: palevioletred;
-    margin: auto;
-    text-align: center;
-    
-}
-.text{
-    text-align: center;
 }
 nav{
-    margin: auto;
-    background-color: rgb(129, 2, 108);
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    background-color: rgba(185, 15, 44, 0.637);
 
 }
-
 button{
     margin: auto;
    padding-inline: 9%;
     color: black;
     border-radius: 50px;
-    background-color: aqua;
-    
-
-}
-footer{
-    
-    background-image: linear-gradient(70deg, rgba(108, 3, 134, 0.719), #700d2bc0);
-
-
-
-}
+    background-color: rgb(255, 8, 8);
+ }
